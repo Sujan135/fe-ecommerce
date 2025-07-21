@@ -1,5 +1,6 @@
 <template>
   <nav>
+    <HeaderHome/>
     <router-view v-if="products && categories"
     :baseURL = "baseURL"
     :products = "products"
@@ -10,6 +11,8 @@
 </template>
 
 <script>
+import HeaderHome from './components/HeaderHome.vue'
+
 const axios = require('axios')
 
 export default {
@@ -20,6 +23,8 @@ export default {
       categories : null,
     }
   },
+
+  components : {HeaderHome},
 
   methods : {
     async fetchData() {
