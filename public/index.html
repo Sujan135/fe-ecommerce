@@ -5,12 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+    <title>Sujan's Pie Shop</title>
+    
+    <!--  Bootstrap CSS-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-cVKIPhGktK2PDkPZUU5S1QmLq0E6P5Z4F6uwey1hkU9Q0nQ4fGII0yAnsD+5y2z+"
+          crossorigin="anonymous"></script>
+    
+    <!-- // Option 2: Seperate Popper and Bootstrap js -->
+
+    <!-- // Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+            integrity="sha384-IQsoLXl2R0z7gkU7dFN6jHv1gz8iWlDb0m7xZCkFosY7nV7cS8UazLkzC12mFvcP" 
+            crossorigin="anonymous">
+    </script>
+
+    <!-- // Bootstrap JS   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+            integrity="sha384-4gtN4mU5Nz5OMiA74QRbZ4SmYts+77obUbPwnfZLoh9vJEN2DnKpWZetM1MjkHba" 
+            crossorigin="anonymous">
+    </script>
+
+
+
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
